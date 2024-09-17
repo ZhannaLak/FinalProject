@@ -1,0 +1,76 @@
+<html>
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/head.html')
+<header>
+    @@include('blocks/header.html')
+</header>
+
+<body>
+    <div class="register_info">
+        <h1 class="z1">Регистрация</h1>
+        <span>Уже есть зарегистрированный аккаунт? <a href="#" class="link">Войти</a></span>
+    </div>
+    <form class="register_form">
+        <div class="register_blocks">
+            <label for="email">Email<span style="color:red">*</span></label>
+            <input class="register_input" name="email" placeholder="Введите свой email" />
+        </div>
+        <div class="register_blocks">
+            <label for="telephone">Телефон</label>
+            <input class="register_input" name="telephone" placeholder="Укажи свой телефон" />
+        </div>
+        <div class="register_blocks">
+            <label for="name">Имя<span style="color:red;">*</span></label>
+            <input class="register_input" name="name" placeholder="Укажите имя" />
+        </div>
+        <div class="register_blocks">
+            <label for="surname">Фамилия</label>
+            <input class="register_input" name="surname" placeholder="Укажи фамилию" />
+        </div>
+        <div class="register_blocks">
+            <label for="password">Пароль<span style="color:red;">*</span></label>
+            <input class="register_input" name="password" placeholder="Придумай пароль" />
+        </div>
+        <div class="register_blocks">
+            <label>Подтверждение пароля<span style="color:red;">*</span></label>
+            <input class="register_input" name="password confirmation " placeholder="Повтори пароль" />
+        </div>
+        <div class="register_blocks">
+            <label for="options">Страна</label>
+            <input class="register_input" type="text" id="options" name="options" list="suggestions">
+            <datalist id="suggestions">
+                <option value="Россия">
+                <option value="США">
+                <option value="Англия">
+                <option value="Мексика">
+            </datalist>
+        </div>
+        <div class="register_blocks">
+            <label>Дата рождения</label>
+            <div class="register_date">
+                <input class="register_input register_input_date" name="calendar" placeholder="дд" />
+                <input class="register_input register_input_date" name="calendar" placeholder="мм" />
+                <input class="register_input register_input_date" name="calendar" placeholder="гг" />
+                <svg class="registration_calendar">
+                    <use xlink:href="assets/icons/symbols.svg#calendar"></use>
+                </svg>
+            </div>
+        </div>
+        <label class="register_checkbox">
+            <input type="checkbox" name="agree" id="agree" class="custom-checkbox">
+            <label for="agree" class="custom-label"> Нажимая «Создать аккаунт», я подтверждаю, что ознакомился с
+                положениями, указанными в
+                статьях Условия использования и Политика конфиденциальности.</label>
+
+        </label>
+        <button class="register_create-account">Создать аккаунт</button>
+    </form>
+</body>
+
+<footer>
+    @@include('blocks/footer.html')
+</footer>
+
+</html>

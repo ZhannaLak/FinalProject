@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
+  <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
+  <title>SiteProjectZhanna</title> <!-- Задавайте заголовок -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script defer src="../scripts/map.min.js"></script>
+
+<header>
+  <header class="header__mainblock">
+    <a href="catalog.html" class="header__catalog">
+      <svg class="header__icon">
+        <use xlink:href="assets/icons/symbols.svg#grid"></use>
+      </svg>
+      <span>Каталог</span>
+    </a>
+    <a href="../index.html">
+      <img class="logo" src="assets/images/logo-red.png">
+    </a>
+    <nav class="header__navigation">
+      <a href="../detailed.html">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#heart_logo"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#shopping_cart"></use>
+        </svg>
+      </a>
+      <a href="../register.html">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+        </svg>
+      </a>
+    </nav>
+  </header>
+</header>
+
+<body>
+  <main class="main-section">
+    <article class="article-1">
+      <img class="picture_middle" src="assets/images/87.png">
+      <img class="picture_start" src="assets/images/union-pic.png">
+      <div class="collection">
+        <span> Коллекция <strong class="z1">1987</strong>
+        </span>
+      </div>
+      <button class="buttonlink">Смотреть</button>
+    </article>
+
+    <article class="article-2">
+      <div class="main_textblock">
+        <h1 class="z1">Кит Харинг</h1>
+        <br>
+        </br>
+        <span>Застенчивый очкарик и гений поп-арта Кит Харинг родился 4 мая 1958 года в Пенсильвании.</span>
+        <br>
+        <br>
+        <span>История его жизни вписывается в представления о жизни гения поп-арта: родился, жил, творил, был
+          гомосексуалистом
+          и рано умер от СПИДа.</span>
+      </div>
+
+
+      <div style="display:grid">
+        <button onclick="window.location.href='../news.html'" class="buttonlink-2">Читать статью</button>
+        <img сlass="picture_body" src="assets/images/danceman.jpg">
+        <div class="picture_under">
+          <img src="assets/images/K-Haring.png">
+          <span>Кит Харинг, 1982 г.</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="article-3">
+      <h1 class="font_text">Популярные постеры</h1>
+      <div class="listing__poster ">
+        <div class="listing__slider slider">
+          <button id="prev" onclick="changeSlide(-1)" class="prev button-slider">❮</button>
+          <button id="next" onclick="changeSlide(1)" class="next button-slider">❯</button>
+        </div>
+        <div class="slides">
+          <article style="background: #5899EF" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/poster1.png"" alt=" poster1" />
+            </picture>
+          </article>
+          <article style="background: #FAEB50" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image23.jpg"" alt=" poster2" />
+            </picture>
+          </article>
+          <article style="background: #6ECB03" class="poster-size slide active">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image39.jpg"" alt=" poster3" />
+            </picture>
+            Andy Mouse, 1986
+          </article>
+          <article style="background: #EC6F2D" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image21.jpg"" alt=" poster4" />
+            </picture>
+          </article>
+          <article style="background: #FAEB50" class="poster-size slide ">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image29.jpg"" alt=" poster5" />
+            </picture>
+          </article>
+        </div>
+        <!-- prettier-ignore -->
+        <!-- <article style="background: #5899EF" class="poster-size @@id">
+    <picture class="poster-main_pic">
+      <img src="assets/images/poster1.png" alt="poster1"/>
+    </picture>
+</article>
+<script src="scripts/slider.js"></script>
+
+
+<article style="background: #FAEB50" class="poster-size slide">
+    <picture class="poster-main_pic">
+      <img src="assets/images/image23.jpg" alt="poster2"/>
+    </picture>
+</article>
+<script src="scripts/slider.js"></script>
+
+
+<article style="background: #6ECB03" class="poster-size slide active">
+    <picture class="poster-main_pic">
+      <img src="assets/images/image39.jpg" alt="poster2"/>
+    </picture>
+</article>
+<script src="scripts/slider.js"></script>
+
+
+<article style="background: #EC6F2D" class="poster-size slide">
+    <picture class="poster-main_pic">
+      <img src="assets/images/image21.jpg" alt="poster2"/>
+    </picture>
+</article>
+<script src="scripts/slider.js"></script>
+
+
+<article style="background: #FAEB50" class="poster-size @@id">
+    <picture class="poster-main_pic">
+      <img src="assets/images/image29.jpg" alt="poster2"/>
+    </picture>
+</article>
+<script src="scripts/slider.js"></script>
+
+
+ -->
+      </div>
+
+    </article>
+
+    <h1 class="font_text">Адреса магазинов</h1>
+
+    <article class="article-4">
+
+      <div class="popshop">
+        <div class="info">
+          <strong class="z2">Pop Shop
+            <p></p>
+            «1987»
+          </strong>
+          <br>
+          </br>
+          <p>Проспект Ленина, 121</p>
+          <p>
+            <strong>ЦУМ,</strong>
+            <span class="gray-text">торговый центр</span>
+          </p>
+          <ul>
+            <li>Открыто до 21.00</li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <strong class="z2">Pop Shop
+            <p></p>
+            «Лающая собака»
+          </strong>
+          <br>
+          </br>
+          <p>Проспект Ленина, 15</p>
+          <p>
+            <strong>999, </strong>
+            <span class="gray-text">торговый центр</span>
+          </p>
+          <ul>
+            <li>Открыто до 21.00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="map" id="js-contactsMap"></div>
+
+    </article>
+  </main>
+
+
+</body>
+
+
+<footer>
+  <div class="top_block">
+    <img class="logo" src="assets/images/logo.png">
+  </div>
+
+  <section class="info_block">
+    <div class="catalog">
+      <strong>Каталог</strong>
+      <br>
+      </br>
+      <ul>
+        <ol>Коллекция 1982</ol>
+        <ol>Коллекция 1986</ol>
+        <ol>Коллекция 1987</ol>
+        <ol>Коллекция 1988</ol>
+        <ol>Коллекция 1989</ol>
+      </ul>
+    </div>
+
+    <div class="buyer">
+      <strong>Покупателю</strong>
+      <br>
+      </br>
+      <ul>
+        <ol>Как сделать заказ</ol>
+        <ol>Правила возврата</ol>
+        <ol>Контакты</ol>
+      </ul>
+    </div>
+
+
+    <div class="connection">
+      <strong class="connection__text">На связи</strong>
+      <div class="connection__image">
+        <img class="connection_img" src="assets/images/telegramm.jpg">
+        <img class="connection_img" src="assets/images/WhatsApp.jpg">
+        <img class="connection_img" src="assets/images/VK.jpg">
+      </div>
+    </div>
+  </section>
+
+  <div class="bot_block">
+    <strong class="bot_block__conf">Политика конфиденциальности</strong>
+    <strong class="bot_block__cookies ">Cookies</strong>
+  </div>
+</footer>
+
+<script src="scripts/slider.js"></script>
+
+</html>

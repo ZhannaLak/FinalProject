@@ -1,0 +1,140 @@
+<html>
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/head.html')
+<header>
+  @@include('blocks/header.html')
+</header>
+
+<body>
+  <!-- @@include('blocks/popup.html') -->
+  <main class="detailed_main">
+@@include('blocks/popup.html')
+    <span><a href="../index.html" class="gray-text">Главная</a>/<a href="../catalog.html"
+        class="gray-text">Каталог</a>/Постер Andy Mouse | 60-60 см</span>
+    
+        <div>
+      <a class="detailed_popup">
+        <img alt="popup" id="popup-image" style="cursor: pointer; width: 300px;" сlass="picture_body" src="assets/images/image39.jpg">
+      </a>
+      <div class="detailed_info">
+        <h2 class="z2">Постер Andy Mouse | 60-60 см</z2>
+          <h1 class="z1">1 850 ₽</h1>
+          </p>
+          <div class="detailed_label">
+            <label>
+              <input type="radio" name="name" value="value1">
+              Бумажный постер
+            </label>
+            <label>
+              <input type="radio" name="name" value="value2">
+              Электронный постер
+            </label>
+          </div>
+          <div class="detailed_label">
+            <strong>Количество</strong>
+            <strong>+</strong>
+            <strong>1</strong>
+            <strong>-</strong>
+          </div>
+          <div class="detailed_label">
+            <label>
+              <button>Добавить в корзину</button>
+            </label>
+            <svg class="header__icon">
+              <use xlink:href="assets/icons/symbols.svg#heartblue"></use>
+            </svg>
+          </div>
+          <div>
+            <svg class="header__icon">
+              <use xlink:href="assets/icons/symbols.svg#truck"></use>
+            </svg>
+            <strong>Бесплатная доставка</strong>
+          </div>
+      </div>
+    </div>
+
+    <div class="detailed_description">
+      <strong>Описание</strong>
+
+      Энди Маус — серия шелкографических принтов, созданная американским художником Китом Харингом в 1986 году.
+      Персонаж
+      Энди Маус-это сплав диснеевского Микки Мауса и Энди Уорхола.
+
+      Серия состоит из четырех шелкографических принтов на тканой бумаге, подписанных и датированных карандашом
+      Харингом
+      и
+      Уорхолом.
+  
+    </div>
+    <ul>
+      <li>Дата выхода серии 1986 год</li>
+      <li>Идейный вдохновитель — Энди Уорхол</li>
+      <li>Размер постера 60-60 см</li>
+    </ul>
+
+
+    <h2 class="z2">Вся серия Andy Mouse 1986</h2>
+
+    <ol>
+      <li>Andy Mouse Green </li>
+      <li>Andy Mouse Orange</li>
+      <li>Andy Mouse Blue </li>
+      <li>Andy Mouse Yellow </li>
+      <li>Andy Mouse Green B</li>
+    </ol>
+
+
+
+
+    <div class="listing__poster">
+      <!-- prettier-ignore -->
+      @@loop('blocks/events-blocks.html', [
+      {
+      "class": "picture",
+      "icon": "heart",
+      "background": "@green",
+      "img": "assets/images/image1.png",
+      "alt": "image1",
+      "title": "1850 ₽",
+      "descr": "Постер | 60-60 см.",
+      },
+      {
+      "class": "picture",
+      "icon": "heart",
+      "background": "@orange",
+      "img": "assets/images/image2.png",
+      "alt": "image2",
+      "title": "1850 ₽",
+      "descr": "Постер | 60-60 см.",
+      },
+      {
+      "class": "picture",
+      "icon": "heart",
+      "background": "@cyan",
+      "img": "assets/images/image3.png",
+      "alt": "image3",
+      "title": "1850 ₽",
+      "descr": "Постер | 60-60 см.",
+      },
+      {
+      "class": "picture",
+      "icon": "heart",
+      "background": "@yellow",
+      "img": "assets/images/image4.png",
+      "alt": "image4",
+      "title": "1850 ₽",
+      "descr": "Постер | 60-60 см.",
+      }
+      ])
+    </div>
+  </main>
+</body>
+
+<footer>
+  @@include('blocks/footer.html')
+</footer>
+
+<script src="../scripts/pp.js"></script>
+</html>

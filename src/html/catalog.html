@@ -1,0 +1,208 @@
+<html>
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/head.html')
+
+<header>
+  @@include('blocks/header.html')
+</header>
+
+<body>
+
+  <main class="catalog_main">
+    <a href="../index.html" class="gray-text">Главная</a>/Каталог
+    <br></br>
+    <h1 class="z1">Каталог</h1>
+    <br></br>
+    <article class="catalog_article">
+
+      <aside class="catalog_aside">
+        <strong>Коллекция</strong>
+        <br></br>
+        <input type="checkbox" name="agree" id="1982" class="custom-checkbox">
+        <label for="1982" class="custom-label">1982 года</label>
+        <p></p>
+       <input type="checkbox" name="agree" id="1986" class="custom-checkbox">
+        <label for="1986" class="custom-label">1986 года</label>
+        <p></p>
+       <input type="checkbox" name="agree" id="1987" class="custom-checkbox">
+       <label for="1987" class="custom-label">1987 года</label>
+        <p></p>
+       <input type="checkbox" name="agree" id="1988" class="custom-checkbox">
+       <label for="1988" class="custom-label">1988 года</label>
+        <p></p>
+       <input type="checkbox" name="agree" id="1989" class="custom-checkbox">
+       <label for="1989" class="custom-label">1989 года</label>
+        <br></br>
+
+        <fieldset class="catalog_aside_fieldset">
+          <legend><strong>Наличие</strong></legend>
+          <br>
+          <label>
+            <input type="radio" name="name" value="value1">
+            В наличие
+          </label>
+          <label>
+            <input type="radio" name="name" value="value2">
+            Под заказ
+          </label>
+          <label>
+            <input type="radio" name="name" value="value3">
+            Всё
+          </label>
+        </fieldset>
+        <br></br>
+        <strong>Ориентация</strong>
+        <br></br>
+        <input type="checkbox" name="agree" id="book" class="custom-checkbox">
+        <label for="book" class="custom-label">Книжная</label>
+        <p></p>
+       <input type="checkbox" name="agree" id="landscape" class="custom-checkbox">
+       <label for="landscape" class="custom-label">Альбомная</label>
+        <br></br>
+
+        <div class="amount">
+          <strong>Цена, ₽</strong>
+          <br></br>
+          <div style="display:flex; margin-bottom: 10px;">
+            <input type="range" class="catalog_range horizontal">
+            <input type="range" class="catalog_range">
+          </div>
+          <div class="space-between">
+
+            <span>от 650</span>
+            <span>до 5 000 </span>
+          </div>
+        </div>
+
+        <button class="button_accept">Применить</button>
+
+        <a class="link" href="#">Сбросить</a>
+      </aside>
+
+
+      <div class="listing__poster-list">
+        <!-- prettier-ignore -->
+        @@loop('blocks/events-blocks.html', [
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster1.png",
+        "alt": "poster1",
+        "title": "850 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heartblue",
+        "img": "assets/images/poster2.png",
+        "alt": "poster2",
+        "title": "550 ₽",
+        "descr": "Постер | 30-40 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster3.png",
+        "alt": "poster3",
+        "title": "1200 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heartblue",
+        "img": "assets/images/poster4.png",
+        "alt": "poster4",
+        "title": "1850 ₽",
+        "descr": "Постер | 60-60 см.",
+        "href": "../detailed.html",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster5.png",
+        "alt": "poster5",
+        "title": "1000 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster6.png",
+        "alt": "poster6",
+        "title": "850 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster7.png",
+        "alt": "poster7",
+        "title": "700 ₽",
+        "descr": "Постер | 30-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster8.png",
+        "alt": "poster8",
+        "title": "1250 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster9.png",
+        "alt": "poster9",
+        "title": "550 ₽",
+        "descr": "Постер | 30-40 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster10.png",
+        "alt": "poster10",
+        "title": "450 ₽",
+        "descr": "Постер | 20-30 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heart",
+        "img": "assets/images/poster11.png",
+        "alt": "poster11",
+        "title": "1150 ₽",
+        "descr": "Постер | 50-60 см.",
+        },
+        {
+        "class": "picture",
+        "icon":"heartblue",
+        "img": "assets/images/poster12.png",
+        "alt": "poster12",
+        "title": "1350 ₽",
+        "descr": "Постер | 40-60 см.",
+        },
+        ])
+      </div>
+    </article>
+    <div class="pagination">
+      <a href="#"> Назад </a>
+      <a class="pagination_page"> 1 </a>
+      <a class="pagination_page"> 2 </a>
+      <a class="pagination_page"> 3 </a>
+      <a class="pagination_page"> 4 </a>
+      <a class="pagination_page"> 5 </a>
+      <a class="pagination_page"> 6 </a>
+      <a> ... </a>
+      <a class="pagination_page"> 11 </a>
+      <a href="#"> Вперед </a>
+    </div>
+  </main>
+</body>
+
+
+<footer>
+  @@include('blocks/footer.html')
+</footer>
+
+</html>

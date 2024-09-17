@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('blocks/head.html')
+
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script defer src="../scripts/map.min.js"></script>
+
+<header>
+  @@include('blocks/header.html')
+</header>
+
+<body>
+  <main class="main-section">
+    <article class="article-1">
+      <img class="picture_middle" src="assets/images/87.png">
+      <img class="picture_start" src="assets/images/union-pic.png">
+      <div class="collection">
+       <span> Коллекция <strong class="z1">1987</strong></span>
+      </div>
+      <button class="buttonlink">Смотреть</button>
+    </article>
+
+    <article class="article-2">
+      <div class="main_textblock">
+        <h1 class="z1">Кит Харинг</h1>
+        <br></br>
+        <span>Застенчивый очкарик и гений поп-арта Кит Харинг родился 4 мая 1958 года в Пенсильвании.</span>
+        <br><br>
+        <span>История его жизни вписывается в представления о жизни гения поп-арта: родился, жил, творил, был
+        гомосексуалистом
+        и рано умер от СПИДа.</span>
+      </div>
+
+
+      <div style="display:grid">
+        <button onclick="window.location.href='../news.html'" class="buttonlink-2">Читать статью</button>
+        <img сlass="picture_body" src="assets/images/danceman.jpg">
+        <div class="picture_under">
+          <img src="assets/images/K-Haring.png">
+          <span>Кит Харинг, 1982 г.</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="article-3">
+      <h1 class="font_text">Популярные постеры</h1>
+      <div class="listing__poster ">
+        <div class="listing__slider slider">
+          <button id="prev" onclick="changeSlide(-1)" class="prev button-slider">❮</button>
+          <button id="next" onclick="changeSlide(1)" class="next button-slider">❯</button>
+        </div>
+        <div class="slides">
+          <article style="background: #5899EF" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/poster1.png"" alt=" poster1" />
+            </picture>
+          </article>
+          <article style="background: #FAEB50" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image23.jpg"" alt=" poster2" />
+            </picture>
+          </article>
+          <article style="background: #6ECB03" class="poster-size slide active">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image39.jpg"" alt=" poster3" />
+            </picture>
+            Andy Mouse, 1986
+          </article>
+          <article style="background: #EC6F2D" class="poster-size slide">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image21.jpg"" alt=" poster4" />
+            </picture>
+          </article>
+          <article style="background: #FAEB50" class="poster-size slide ">
+            <picture class="poster-main_pic">
+              <img src="assets/images/image29.jpg"" alt=" poster5" />
+            </picture>
+          </article>
+        </div>
+        <!-- prettier-ignore -->
+        <!-- @@loop('blocks/poster-main.html', [
+        {
+        "background": "#5899EF",
+        "img": "assets/images/poster1.png",
+        "alt": "poster1",
+        },
+        {
+        "id": "slide",
+        "background": "#FAEB50",
+        "img": "assets/images/image23.jpg",
+        "alt": "poster2",
+        },
+        {
+        "id": "slide active",
+        "background": "#6ECB03",
+        "img": "assets/images/image39.jpg",
+        "alt": "poster2",
+        },
+        {
+        "id": "slide",
+        "background": "#EC6F2D",
+        "img": "assets/images/image21.jpg",
+        "alt": "poster2",
+        },
+        {
+        "background": "#FAEB50",
+        "img": "assets/images/image29.jpg",
+        "alt": "poster2",
+        },
+        ]) -->
+      </div>
+
+    </article>
+
+    <h1 class="font_text">Адреса магазинов</h1>
+
+    <article class="article-4">
+
+      <div class="popshop">
+        <div class="info">
+          <strong class="z2">Pop Shop
+            <p></p>
+            «1987»
+          </strong>
+          <br></br>
+          <p>Проспект Ленина, 121</p>
+          <p><strong>ЦУМ,</strong><span class="gray-text">торговый центр</span></p>
+          <ul>
+            <li>Открыто до 21.00</li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <strong class="z2">Pop Shop
+            <p></p>
+            «Лающая собака»
+          </strong>
+          <br></br>
+          <p>Проспект Ленина, 15</p>
+          <p><strong>999, </strong><span class="gray-text">торговый центр</span></p>
+          <ul>
+            <li>Открыто до 21.00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="map" id="js-contactsMap"></div>
+
+    </article>
+  </main>
+
+
+</body>
+
+
+<footer>
+  @@include('blocks/footer.html')
+</footer>
+
+<script src="scripts/slider.js"></script>
+</html>

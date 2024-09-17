@@ -1,0 +1,159 @@
+<html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head> <!-- Визуально отделяйте вложенные элементы двойным пробелом -->
+  <meta charset="UTF-8" /> <!-- Указывайте кодировку -->
+  <title>SiteProjectZhanna</title> <!-- Задавайте заголовок -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<header>
+  <header class="header__mainblock">
+    <a href="catalog.html" class="header__catalog">
+      <svg class="header__icon">
+        <use xlink:href="assets/icons/symbols.svg#grid"></use>
+      </svg>
+      <span>Каталог</span>
+    </a>
+    <a href="../index.html">
+      <img class="logo" src="assets/images/logo-red.png">
+    </a>
+    <nav class="header__navigation">
+      <a href="../detailed.html">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#heart_logo"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#shopping_cart"></use>
+        </svg>
+      </a>
+      <a href="../register.html">
+        <svg class="header__icon">
+          <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+        </svg>
+      </a>
+    </nav>
+  </header>
+</header>
+
+<body>
+  <div class="register_info">
+    <h1 class="z1">Регистрация</h1>
+    <span>Уже есть зарегистрированный аккаунт? <a href="#" class="link">Войти</a>
+    </span>
+  </div>
+  <form class="register_form">
+    <div class="register_blocks">
+      <label for="email">Email<span style="color:red">*</span>
+      </label>
+      <input class="register_input" name="email" placeholder="Введите свой email" />
+    </div>
+    <div class="register_blocks">
+      <label for="telephone">Телефон</label>
+      <input class="register_input" name="telephone" placeholder="Укажи свой телефон" />
+    </div>
+    <div class="register_blocks">
+      <label for="name">Имя<span style="color:red;">*</span>
+      </label>
+      <input class="register_input" name="name" placeholder="Укажите имя" />
+    </div>
+    <div class="register_blocks">
+      <label for="surname">Фамилия</label>
+      <input class="register_input" name="surname" placeholder="Укажи фамилию" />
+    </div>
+    <div class="register_blocks">
+      <label for="password">Пароль<span style="color:red;">*</span>
+      </label>
+      <input class="register_input" name="password" placeholder="Придумай пароль" />
+    </div>
+    <div class="register_blocks">
+      <label>Подтверждение пароля<span style="color:red;">*</span>
+      </label>
+      <input class="register_input" name="password confirmation " placeholder="Повтори пароль" />
+    </div>
+    <div class="register_blocks">
+      <label for="options">Страна</label>
+      <input class="register_input" type="text" id="options" name="options" list="suggestions">
+      <datalist id="suggestions">
+        <option value="Россия">
+        <option value="США">
+        <option value="Англия">
+        <option value="Мексика">
+      </datalist>
+    </div>
+    <div class="register_blocks">
+      <label>Дата рождения</label>
+      <div class="register_date">
+        <input class="register_input register_input_date" name="calendar" placeholder="дд" />
+        <input class="register_input register_input_date" name="calendar" placeholder="мм" />
+        <input class="register_input register_input_date" name="calendar" placeholder="гг" />
+        <svg class="registration_calendar">
+          <use xlink:href="assets/icons/symbols.svg#calendar"></use>
+        </svg>
+      </div>
+    </div>
+    <label class="register_checkbox">
+      <input type="checkbox" name="agree" id="agree" class="custom-checkbox">
+      <label for="agree" class="custom-label"> Нажимая «Создать аккаунт», я подтверждаю, что ознакомился с
+        положениями, указанными в
+        статьях Условия использования и Политика конфиденциальности.</label>
+
+    </label>
+    <button class="register_create-account">Создать аккаунт</button>
+  </form>
+</body>
+
+<footer>
+  <div class="top_block">
+    <img class="logo" src="assets/images/logo.png">
+  </div>
+
+  <section class="info_block">
+    <div class="catalog">
+      <strong>Каталог</strong>
+      <br>
+      </br>
+      <ul>
+        <ol>Коллекция 1982</ol>
+        <ol>Коллекция 1986</ol>
+        <ol>Коллекция 1987</ol>
+        <ol>Коллекция 1988</ol>
+        <ol>Коллекция 1989</ol>
+      </ul>
+    </div>
+
+    <div class="buyer">
+      <strong>Покупателю</strong>
+      <br>
+      </br>
+      <ul>
+        <ol>Как сделать заказ</ol>
+        <ol>Правила возврата</ol>
+        <ol>Контакты</ol>
+      </ul>
+    </div>
+
+
+    <div class="connection">
+      <strong class="connection__text">На связи</strong>
+      <div class="connection__image">
+        <img class="connection_img" src="assets/images/telegramm.jpg">
+        <img class="connection_img" src="assets/images/WhatsApp.jpg">
+        <img class="connection_img" src="assets/images/VK.jpg">
+      </div>
+    </div>
+  </section>
+
+  <div class="bot_block">
+    <strong class="bot_block__conf">Политика конфиденциальности</strong>
+    <strong class="bot_block__cookies ">Cookies</strong>
+  </div>
+</footer>
+
+</html>
